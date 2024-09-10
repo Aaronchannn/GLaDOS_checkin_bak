@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
         if 'message' in checkin.text:
             msg = checkin.json()['message']
-            print(email+'|'+'剩余：'+days+'天|'+msg+'|积分：'+balance+'|变化：'+ change +'\n')
+            print('email'+'|'+'剩余：'+days+'天|'+msg+'|积分：'+balance+'|变化：'+ change +'\n')
             sendmsg += email+'|'+'剩余：'+days+'天|'+msg+'|积分：'+balance+'|变化：'+ change +'\n'
         else:
             sendmsg += email + '签到失败，请更新cookies'
